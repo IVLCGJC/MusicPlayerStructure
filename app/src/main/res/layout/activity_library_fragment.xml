@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="4dp"
+    tools:context="com.example.android.musicplayerstructure.LibraryFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/playlist"
+            style="@style/UpperMenuIcons"
+            android:src="@drawable/play_inactive"
+            />
+        <ImageView
+            android:id="@+id/library"
+            style="@style/UpperMenuIcons"
+            android:src="@drawable/library_active"
+            />
+        <ImageView
+            android:id="@+id/search"
+            style="@style/UpperMenuIcons"
+            android:src="@drawable/search_inactive"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            style="@style/UpperMenuIcons"
+            android:src="@drawable/add"
+            />
+        <TextView
+            style="@style/SearchText"
+            android:text="@string/add"/>
+        <ImageView
+            style="@style/UpperMenuIcons"
+            android:src="@drawable/select_all"
+            />
+        <TextView
+            style="@style/SearchText"
+            android:text="@string/select_all"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            style="@style/SearchText"
+            android:text="@string/folder_a"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            style="@style/SearchText"
+            android:text="@string/file_a"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            style="@style/SearchText"
+            android:text="@string/file_a"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            style="@style/SearchText"
+            android:text="@string/folder_b"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            style="@style/SearchText"
+            android:text="@string/file_a" />
+    </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        style="@style/SearchText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/library_info"/>
+
+</LinearLayout>

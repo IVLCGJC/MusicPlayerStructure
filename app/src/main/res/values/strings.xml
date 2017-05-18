@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">MusicPlayerStructure</string>
+    <string name="internal_storage">Internal Storage</string>
+    <string name="sd_card">SD Card</string>
+    <string name="search_info">* Here the user could search for music files on the phone or on external SD Card. For example mp3, ogg, wav, flac, etc. files. This TextView could be replaced with the list elements of the findings and after that the user can add the selected items to his library. *</string>
+    <string name="folder_a">Folder or album name 1</string>
+    <string name="folder_b">Folder or album name 2</string>
+    <string name="file_a">Song name or filename</string>
+    <string name="add">Add selected</string>
+    <string name="select_all">Select all</string>
+    <string name="library_info">* Here the user can see the list of songs, folders/albums, which he selected through search. The songs can be selected and added to the playlist. *</string>
+    <string name="currently_playing">Title / Artist / Album</string>
+    <string name="currently_playing_time">00:36 / 04:55</string>
+    <string name="playlist_info">* In this list view, the selected songs from the Library are shown, the active song is emphasised with more details about the song. The song could be paused and navigated with the progress bar to the desired position. By tapping on other element, it starts to play and become the active, emphasised view. The list of songs are scrollable, the order is by the selection from the Library. Additional feature could be the manual rearrange of the songs by dragging them up or down, or remove items by swipe left on the item for example  *</string>
+</resources>

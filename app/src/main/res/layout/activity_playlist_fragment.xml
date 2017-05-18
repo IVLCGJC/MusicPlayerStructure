@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="4dp"
+    tools:context="com.example.android.musicplayerstructure.PlaylistFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            style="@style/UpperMenuIcons"
+            android:src="@drawable/play_active" />
+
+        <ImageView
+            style="@style/UpperMenuIcons"
+            android:src="@drawable/library_inactive" />
+
+        <ImageView
+            style="@style/UpperMenuIcons"
+            android:src="@drawable/search_inactive" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    style="@style/InQueue"
+                    android:src="@drawable/play_inactive" />
+
+                <TextView
+                    style="@style/SearchText"
+                    android:text="@string/file_a" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    style="@style/InQueue"
+                    android:src="@drawable/play_inactive" />
+
+                <TextView
+                    style="@style/SearchText"
+                    android:text="@string/file_a" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/switch_play_pause"
+                    style="@style/CurrentlyPlaying"
+                    android:src="@drawable/pause" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="4">
+                    <TextView
+                        style="@style/PlayText"
+                        android:textAlignment="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/currently_playing"/>
+                    <TextView
+                        style="@style/PlayText"
+                        android:textAlignment="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/currently_playing_time"/>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/progress_bar" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        style="@style/CurrentlyPlaying"
+                        android:src="@drawable/eq" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    style="@style/InQueue"
+                    android:src="@drawable/play_inactive" />
+
+                <TextView
+                    style="@style/SearchText"
+                    android:text="@string/file_a" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    style="@style/InQueue"
+                    android:src="@drawable/play_inactive" />
+
+                <TextView
+                    style="@style/SearchText"
+                    android:text="@string/file_a" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    style="@style/InQueue"
+                    android:src="@drawable/play_inactive" />
+
+                <TextView
+                    style="@style/SearchText"
+                    android:text="@string/file_a" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    style="@style/InQueue"
+                    android:src="@drawable/play_inactive" />
+
+                <TextView
+                    style="@style/SearchText"
+                    android:text="@string/file_a" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/SearchText"
+                android:text="@string/playlist_info"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+

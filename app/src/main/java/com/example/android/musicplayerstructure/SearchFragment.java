@@ -36,18 +36,5 @@ public class SearchFragment extends AppCompatActivity {
                 }
             });
         }
-        //Find the search image and set an OnClickListener to it.
-        ImageView search = (ImageView) findViewById(R.id.search);
-
-        if (search != null) {
-            search.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    Intent searchIntent = new Intent(SearchFragment.this, SearchFragment.class);
-                    startActivity(searchIntent);
-                }
-            });
-        }
-
     }
 }

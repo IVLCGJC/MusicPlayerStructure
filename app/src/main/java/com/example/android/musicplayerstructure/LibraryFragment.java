@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.Toast;
 
 public class LibraryFragment extends AppCompatActivity {
 
@@ -26,19 +25,7 @@ public class LibraryFragment extends AppCompatActivity {
                 }
             });
         }
-        //Find the library image and set an OnClickListener to it.
-        ImageView library = (ImageView) findViewById(R.id.library);
-
-        if (library != null) {
-            library.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    Intent libraryIntent = new Intent(LibraryFragment.this, LibraryFragment.class);
-                    startActivity(libraryIntent);
-                }
-            });
-        }
-        //Find the search image and set an OnClickListener to it.
+       //Find the search image and set an OnClickListener to it.
         ImageView search = (ImageView) findViewById(R.id.search);
 
         if (search != null) {

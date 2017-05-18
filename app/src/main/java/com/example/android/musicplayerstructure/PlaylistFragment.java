@@ -5,24 +5,28 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.Toast;
 
 public class PlaylistFragment extends AppCompatActivity {
-
+    public boolean playOrPause = true; //Set initial picture value
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_playlist_fragment);
-        //Find the playlist image and set an OnClickListener to it.
-        ImageView playlist = (ImageView) findViewById(R.id.playlist);
 
-        if (playlist != null) {
-            playlist.setOnClickListener(new View.OnClickListener() {
+        //Change play and pause image
+        final ImageView playAndPause = (ImageView) findViewById(R.id.switch_play_pause);
+
+        if (playAndPause != null) {
+            playAndPause.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Toast.makeText(PlaylistFragment.this, "Clicked", Toast.LENGTH_SHORT).show();
-                    Intent playlistIntent = new Intent(PlaylistFragment.this, PlaylistFragment.class);
-                    startActivity(playlistIntent);
+                    if (playOrPause) {
+                        playAndPause.setImageResource(R.drawable.play_active);
+                        playOrPause = false;
+                    } else {
+                        playAndPause.setImageResource(R.drawable.pause);
+                        playOrPause = true;
+                    }
                 }
             });
         }
@@ -33,7 +37,6 @@ public class PlaylistFragment extends AppCompatActivity {
             library.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Toast.makeText(PlaylistFragment.this, "Clicked", Toast.LENGTH_SHORT).show();
                     Intent libraryIntent = new Intent(PlaylistFragment.this, LibraryFragment.class);
                     startActivity(libraryIntent);
                 }
@@ -46,12 +49,10 @@ public class PlaylistFragment extends AppCompatActivity {
             search.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Toast.makeText(PlaylistFragment.this, "Clicked", Toast.LENGTH_SHORT).show();
                     Intent searchIntent = new Intent(PlaylistFragment.this, SearchFragment.class);
                     startActivity(searchIntent);
                 }
             });
         }
-
     }
 }

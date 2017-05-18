@@ -13,17 +13,20 @@
         android:layout_height="wrap_content">
 
         <ImageView
+            android:id="@+id/playlist"
             style="@style/UpperMenuIcons"
-            android:src="@drawable/play_inactive" />
-
+            android:src="@drawable/play_inactive"
+            />
         <ImageView
+            android:id="@+id/library"
             style="@style/UpperMenuIcons"
-            android:src="@drawable/library_inactive" />
-
+            android:src="@drawable/library_inactive"
+            />
         <ImageView
+            android:id="@+id/search"
             style="@style/UpperMenuIcons"
-            android:src="@drawable/search_active" />
-
+            android:src="@drawable/search_active"
+            />
     </LinearLayout>
 
     <ScrollView
